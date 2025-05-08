@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waterfalls in India</title>
+  <!-- Bootstrap CSS for basic responsiveness -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #e3f2fd;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .waterfall-card {
+      background-color: white;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .waterfall-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .how-to-reach {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#">Waterfalls in India</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h2>Explore the Beautiful Waterfalls of India</h2>
+    <p>Discover India's most breathtaking waterfalls!</p>
+  </header>
+
+  <!-- Waterfalls Section -->
+  <div class="container">
+
+    <!-- Waterfall 1 -->
+    <div class="waterfall-card">
+      <img src="https://via.placeholder.com/350x200?text=Nohkalikai+Falls" alt="Nohkalikai Falls">
+      <h4>Nohkalikai Falls</h4>
+      <p>Located in Meghalaya, this is one of the tallest waterfalls in India.</p>
+      <button class="btn btn-info" onclick="toggleVisibility('reach1')">How to Reach</button>
+      <div id="reach1" class="how-to-reach">
+        <p>Take a flight to Shillong and then travel by road to reach the falls.</p>
+      </div>
+    </div>
+
+    <!-- Waterfall 2 -->
+    <div class="waterfall-card">
+      <img src="https://via.placeholder.com/350x200?text=Dudhsagar+Falls" alt="Dudhsagar Falls">
+      <h4>Dudhsagar Falls</h4>
+      <p>Situated on the Goa-Karnataka border, it's known for its beauty.</p>
+      <button class="btn btn-info" onclick="toggleVisibility('reach2')">How to Reach</button>
+      <div id="reach2" class="how-to-reach">
+        <p>Travel by train to Dudhsagar station or take a road trip through the sanctuary.</p>
+      </div>
+    </div>
+
+    <!-- Waterfall 3 -->
+    <div class="waterfall-card">
+      <img src="https://via.placeholder.com/350x200?text=Jog+Falls" alt="Jog Falls">
+      <h4>Jog Falls</h4>
+      <p>Located in Karnataka, Jog Falls is one of the highest waterfalls in India.</p>
+      <button class="btn btn-info" onclick="toggleVisibility('reach3')">How to Reach</button>
+      <div id="reach3" class="how-to-reach">
+        <p>Take a train to Sagar and travel by road to the falls.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Waterfalls in India | All Rights Reserved
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleVisibility(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "block") {
+        element.style.display = "none";
+      } else {
+        element.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
